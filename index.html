@@ -1,0 +1,492 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--=============== icon ===============-->
+  <link rel="icon" type="image/png" href="./assets/images/icon.PNG" />
+  <!--=============== svg ===============-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.js" charset="utf-8"></script>
+  <!--=============== BOXICONS ===============-->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <title>Immad | Portfolio</title>
+</head>
+
+<body onload="preloading()">
+  <!--=============== preloader ===============-->
+  <div id="loading"></div>
+
+  <!--=============== scroll down ===============-->
+  <h2 class="scroll">
+    Discover my tech skills <br> Scroll down</h2>
+  <div class="mouse">
+    <a href="#home" class="home_scroll">
+      <i class='bx bx-mouse '></i>
+    </a>
+    <svg width="100%" height="700px" style=" margin-top: -140px"></svg>
+  </div>
+  <div class="hide head" id="head">
+
+    <!--=============== header section ===============-->
+    <section id="home">
+      <header class="header" id="header">
+        <nav class="nav container">
+          <a href="#" class="nav__logo"><img src="./assets/images/logo.PNG" height="100%"
+              style="margin-top: 40px;" /></a>
+          <div class="nav__menu">
+            <ul class="nav__list">
+              <li class="nav__item ">
+                <a href="#home" class="nav__link">
+                  <i class='bx bx-home'></i>
+                </a>
+              </li>
+              <li class="nav__item ">
+                <a href="#skills" class="nav__link">
+                  <i class='bx bx-pencil'></i>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#services" class="nav__link">
+                  <i class='bx bxs-wrench'></i>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#work" class="nav__link">
+                  <i class='bx bx-briefcase-alt-2'></i>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="nav__link">
+                  <i class='bx bx-chat'></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <!--===============  home section =============== -->
+      <div class="home">
+        <h4>Hello I'm</h4>
+        <h1>Immad Siddiqui</h1>
+        <span class="multi"></span><br><br>
+        <p class="headline">"Bringing your vision to life, with creativity, expertise, and an unwavering commitment to
+          excellence - let's build something amazing!"</p>
+      </div>
+      <div class="home_button">
+        <a download="" href="./assets/resume/Immadcv.pdf" class="button button--ghost"> Download CV</a>
+        <a href="#about" class="button">About</a>
+      </div>
+      <div class="illustration">
+        <img src="./assets/images/il.gif">
+      </div>
+
+      <!--=============== about section ===============-->
+      <div class="about" id="about">
+        <div class="box">
+          <h2 class="alpha">A</h2>
+          <h2 class="alpha">b</h2>
+          <h2 class="alpha">o</h2>
+          <h2 class="alpha">u</h2>
+          <h2 class="alpha">t</h2>
+          <span id="me">
+            <h2 class="alpha">m</h2>
+            <h2 class="alpha">e</h2>
+          </span>
+        </div>
+        <div class="flex">
+          <img src="./assets/images/about1.jpeg" alt="about  img loading..." class="about_img">
+          <div class="about_data">
+            <p class="about_description">
+              My passion lies in solving design problems and creating intelligent user interfaces that engage users. I
+              am eager to develop web applications that are rich in features and offer a seamless online experience for
+              users. With my growing skills and dedication to front-end development, I am ready to take on any challenge
+              that comes my way and continue to learn and grow in this exciting field.<br><br>As a developer, I have a
+              love-hate relationship with Google - it's like my personal code therapist, but it also knows all my coding
+              mistakes and bugs!
+            </p>
+            <a href="#contact" class="button b">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--===============  skills section =============== -->
+    <section class="skills" id="skills">
+      <div class="box">
+        <h2 class="skills_alpha">S</h2>
+        <h2 class="skills_alpha">k</h2>
+        <h2 class="skills_alpha">i</h2>
+        <h2 class="skills_alpha">l</h2>
+        <h2 class="skills_alpha">l</h2>
+        <h2 class="skills_alpha">s</h2>
+      </div>
+      <div class="skill_flex">
+        <div class="skill_description">
+          <p>
+            I excel in crafting visually stunning and interactive web experiences using a blend of HTML, CSS, and
+            JavaScript. My expertise extends to building small to medium-sized web applications with frameworks like
+            React, as well as developing custom plugins and features, creating captivating animations, and coding
+            engaging interactive layouts that keep users coming back for more.<br><br><b> Let's work together to bring
+              your web vision to life!</b>
+          </p>
+        </div>
+        <div class="skills-charts">
+          <div id="myCanvasContainer" style="width:50%">
+            <canvas width="400" height="500" id="myCanvas" class="myCanvas">
+              <ul id="tags">
+                <li><a>HTML</a></li>
+                <li><a target="_blank">CSS</a></li>
+                <li><a target="_blank">ES5</a></li>
+                <li><a target="_blank">ES6</a></li>
+                <li><a target="_blank">REACT</a></li>
+                <li><a target="_blank">Leaflet</a></li>
+                <li><a target="_blank">CesiumJS</a></li>
+                <li><a target="_blank">C/C++</a></li>
+                <li><a target="_blank">Wordpress</a></li>
+                <li><a target="_blank">PHP</a></li>
+                <li><a target="_blank">Python</a></li>
+                <li><a target="_blank">Git</a></li>
+                <li><a target="_blank">C#</a></li>
+                <li><a target="_blank">JQuery</a></li>
+                <li><a target="_blank">MySQL</a></li>
+              </ul>
+            </canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--===============  services section =============== -->
+    <section id="services">
+      <div class="box">
+        <h2 class="alpha">S</h2>
+        <h2 class="alpha">e</h2>
+        <h2 class="alpha">r</h2>
+        <h2 class="alpha">v</h2>
+        <h2 class="alpha">i</h2>
+        <h2 class="alpha">c</h2>
+        <h2 class="alpha">e</h2>
+        <h2 class="alpha">s</h2>
+      </div>
+      <p class="services_description">Staying up-to-date with trends is crucial, but applying that knowledge practically
+        to solve real-world problems and deliver tangible results to clients is essential for success.</p>
+      <section class="services">
+        <div class="mycards">
+          <div class="card">
+            <div class="content">
+              <div class="imgbox">
+                <i class='bx bx-code-alt'></i>
+              </div>
+              <div class="txtbox">
+                <h2>Frontend Dev</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="imgbox">
+                <i class='bx bxl-react'></i>
+              </div>
+              <div class="txtbox">
+                <h2>React</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="imgbox">
+                <i class='bx bxl-python'></i>
+              </div>
+              <div class="txtbox">
+                <h2>Python Programming</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="imgbox">
+                <i class='bx bx-highlight'></i>
+              </div>
+              <div class="txtbox">
+                <h2>Figma to HTML</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="imgbox">
+                <i class='bx bx-code-block'></i>
+              </div>
+              <div class="txtbox">
+                <h2>Class-based Concepts</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="imgbox">
+                <i class='bx bx-desktop'></i>
+              </div>
+              <div class="txtbox">
+                <h2>Responsive Web Design</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!--===============  work section =============== -->
+    <section class="work" id="work">
+      <div class="box">
+        <h2 class="alpha">P</h2>
+        <h2 class="alpha">r</h2>
+        <h2 class="alpha">o</h2>
+        <h2 class="alpha">j</h2>
+        <h2 class="alpha">e</h2>
+        <h2 class="alpha">c</h2>
+        <h2 class="alpha">t</h2>
+        <h2 class="alpha">s</h2>
+      </div>
+      <p class="work_description">
+        Have a look at my projects, each showcasing my skills in delivering innovative and engaging user experiences.
+      </p>
+      <div class="work__filters" id="myBtnContainer">
+        <button class="work__item active-work" onclick="filterSelection('all')">All</button>
+        <button class="work__item " onclick="filterSelection('react')"> react</button>
+        <button class="work__item" onclick="filterSelection('php')"> php</button>
+        <button class="work__item" onclick="filterSelection('res')"> responsive</button>
+      </div>
+      <div class="f1 reveal">
+        <div class="filterDiv react reveal">
+          <div class="nft reveal">
+            <div class='main'>
+              <img class='tokenImage' src="./assets/images/react1.PNG" alt="loading..." />
+              <a href="https://github.com/immadsidd/TENZIES" target="_blank" class="code">
+                <i class='bx bxl-github'></i>
+              </a>
+              <br>
+              <h3>Tenzies Game</h3>
+              <p>#React #HTML</p>
+              <br>
+              <a href="https://immadsidd.github.io/TENZIES/" target="_blank" class="demo">
+                <i class='bx bxs-right-arrow'></i>
+              </a>
+              <hr />
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv php reveal">
+          <div class="nft reveal">
+            <div class='main'>
+              <img class='tokenImage' src="./assets/images/php.PNG" alt="loading..." />
+              <a href="https://github.com/immadsidd/E-Tutoring-" target="_blank" class="code">
+                <i class='bx bxl-github'></i>
+              </a>
+              <br>
+              <h3>E-Tutoring</h3>
+              <p>#php #HTML</p>
+              <br>
+              <a href="https://eetutoring.000webhostapp.com/index.php" target="_blank" class="demo">
+                <i class='bx bxs-right-arrow'></i>
+              </a>
+              <hr />
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv react reveal">
+          <div class="nft reveal">
+            <div class='main'>
+              <img class='tokenImage' src="./assets/images/react4.PNG" alt="loading..." />
+              <a href="https://github.com/immadsidd/Fast-Typing-Game" target="_blank" class="code">
+                <i class='bx bxl-github'></i>
+              </a>
+              <br>
+              <h3>Fast Typing Game</h3>
+              <p>#React #HTML</p>
+              <br>
+              <a href="https://immadsidd.github.io/Fast-Typing-Game/" target="_blank" class="demo">
+                <i class='bx bxs-right-arrow'></i>
+              </a>
+              <hr />
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv react reveal">
+          <div class="nft reveal">
+            <div class='main'>
+              <img class='tokenImage' src="./assets/images/react2.PNG" alt="loading..." />
+              <a href="https://github.com/immadsidd/The-PicSome-webshop" target="_blank" class="code">
+                <i class='bx bxl-github'></i>
+              </a>
+              <br>
+              <h3>PicSome Webshop</h3>
+              <p>#React #HTML</p>
+              <br>
+              <a href="https://immadsidd.github.io/The-PicSome-webshop/" target="_blank" class="demo">
+                <i class='bx bxs-right-arrow'></i>
+              </a>
+              <hr />
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv react reveal">
+          <div class="nft reveal">
+            <div class='main'>
+              <img class='tokenImage' src="./assets/images/react3.PNG" alt="loading..." />
+              <a href="https://github.com/immadsidd/meme-generator" target="_blank" class="code">
+                <i class='bx bxl-github'></i>
+              </a>
+              <br>
+              <h3>Meme Generator</h3>
+              <p>#React #HTML</p>
+              <br>
+              <a href="https://spiffy-mandazi-ac2ad3.netlify.app/" target="_blank" class="demo">
+                <i class='bx bxs-right-arrow'></i>
+              </a>
+              <hr />
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv res reveal">
+          <div class="nft reveal">
+            <div class='main'>
+              <img class='tokenImage' src="./assets/images/res1.PNG" alt="loading..." />
+              <a href="https://github.com/immadsidd/sparks-basic-banking-system" target="_blank" class="code">
+                <i class='bx bxl-github'></i>
+              </a>
+              <br>
+              <h3>Basic Banking System</h3>
+              <p>#HTML #JS #Bootstrap</p>
+              <br>
+              <a href="https://immadsidd.github.io/sparks-basic-banking-system/index.html" target="_blank" class="demo">
+                <i class='bx bxs-right-arrow'></i>
+              </a>
+              <hr />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work_button">
+        <a href="https://github.com/immadsidd?tab=repositories" target="_blank" class="button b">view more projects</a>
+      </div>
+    </section>
+
+    <!--=============== contact section ===============-->
+    <section class="c" id="contact">
+      <div class="box">
+        <h2 class="alpha">C</h2>
+        <h2 class="alpha">o</h2>
+        <h2 class="alpha">n</h2>
+        <h2 class="alpha">t</h2>
+        <h2 class="alpha">a</h2>
+        <h2 class="alpha">c</h2>
+        <h2 class="alpha">t</h2>
+      </div>
+      <div class="contact">
+        <div class="content reveal1">
+          <!-- <h3> Write me your message</h3> -->
+          <p>Seeking a freelancer for your projects?<br> <b>I'm here to help!</b> Contact me through the form for more
+            information or with any questions you may have.</p><br>
+          <form action="https://formspree.io/f/mpzeoaen" method="post" class="contact-form">
+            <h6>Name</h6>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <h6>Email Address</h6>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <h6>Message</h6>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Write Message Here..." required></textarea>
+            <input type="submit" name="send" id="" value="send" class="send">
+          </form>
+        </div>
+        <div class="talk reveal1">
+          <h3 class="contact__title">Talk to me</h3>
+          <div class="contact__info  ">
+            <div class="contact__card ">
+              <i class='bx bx-mail-send contact__card-icon'></i>
+              <a href="mailto:immadsiddiqui52@gmail.com" target="_blank" class="contact__button">
+                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+              </a>
+            </div>
+            <div class="contact__card">
+              <i class='bx bxl-whatsapp contact__card-icon'></i>
+              <a href="https://api.whatsapp.com/send?phone=+923180241682&text=Hey there!" target="_blank"
+                class="contact__button">
+                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d924236.0498210717!2d67.1554619!3d25.1932024!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06651d4bbf%3A0x9cf92f44555a0c23!2sKarachi%2C%20Karachi%20City%2C%20Sindh!5e0!3m2!1sen!2s!4v1680745136405!5m2!1sen!2s"
+              class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--=============== footer section ===============-->
+    <footer class="footer  reveal">
+      <div class="footer__container container">
+        <h1 class="footer__title"><img src="./assets/images/logo3.PNG" height="80px" /></h1>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#home" class="footer__link">Home</a>
+          </li>
+          <li class="footer__item">
+            <a href="#skills" class="footer__link">Skills</a>
+          </li>
+          <li class="footer__item">
+            <a href="#services" class="footer__link">Services</a>
+          </li>
+          <li class="footer__item">
+            <a href="#work" class="footer__link">Projects</a>
+          </li>
+          <li class="footer__item">
+            <a href="#contact" class="footer__link">Contact</a>
+          </li>
+        </ul>
+        <ul class="footer__social">
+          <li class="footer__social-item">
+            <a href="https://www.facebook.com/immad.siddiqui.5?mibextid=LQQJ4d" target="_blank"
+              class="footer__social-link">
+              <i class='bx bxl-facebook footer__social-icon'></i>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="https://github.com/immadsidd" target="_blank" class="footer__social-link">
+              <i class='bx bxl-github footer__social-icon'></i>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="https://www.linkedin.com/in/immad-s-35b962184" target="_blank" class="footer__social-link">
+              <i class='bx bxl-linkedin footer__social-icon'></i>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="https://instagram.com/immad_sidd?igshid=MWQ2ODkyMjM=" target="_blank" class="footer__social-link">
+              <i class='bx bxl-instagram footer__social-icon'></i>
+            </a>
+          </li>
+        </ul>
+        <span class="footer__copy">
+          &#169; 2023 Immad Siddiqui. All rights reserved.
+        </span>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
+
+<!-- scripts -->
+<script src="./assets/js/svg.js"></script>
+<script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+<script type="text/javascript" src="./assets/js/vanilla-tilt.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="./assets/js/tagcanvas.js"></script>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script src="./assets/js/index.js"></script>
