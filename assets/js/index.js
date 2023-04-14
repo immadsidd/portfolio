@@ -7,12 +7,6 @@ function timeout() {
   preloader.style.display = 'none';
 }
 
-// darkmode
-function myFunction() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
-}
-
 // home page reveal
 myID = document.getElementById("head");
 
