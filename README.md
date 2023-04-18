@@ -1,7 +1,7 @@
 <h1 align="center">Portfolio Website</h1>
 
 <h2 align="center">
-<a href="https://immadsidd.github.io/xyz/index.html">Demo</a>
+<a href="https://immadsidd.github.io/portfolio/index.html">Demo</a>
 </h2>
 
 
